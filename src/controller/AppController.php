@@ -1,12 +1,13 @@
 <?php
 
 namespace App\Controller;
+
+use Mayhem\Controller\Controller;
+
 /**
-* 
-*/
-class AppController
+ * App controller, the logics from here will be visible for all controllers
+ */
+class AppController extends Controller
 {
 
 }
-
-?>

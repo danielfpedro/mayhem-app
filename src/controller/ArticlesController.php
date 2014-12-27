@@ -2,9 +2,13 @@
 
 namespace App\Controller;
 
+/**
+ * Controller for test, dont't care about.
+ */
 class ArticlesController extends AppController
 {
 	public function add($id = null){
+
 		return "Estou em " . __FUNCTION__;
 	}
 	public function view($id = null){

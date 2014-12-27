@@ -1,5 +1,48 @@
 [
     {
+        "name": "aura/installer-default",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/auraphp/installer-default.git",
+            "reference": "52f8de3670cc1ef45a916f40f732937436d028c8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/auraphp/installer-default/zipball/52f8de3670cc1ef45a916f40f732937436d028c8",
+            "reference": "52f8de3670cc1ef45a916f40f732937436d028c8",
+            "shasum": ""
+        },
+        "time": "2012-11-26 21:35:57",
+        "type": "composer-installer",
+        "extra": {
+            "class": "Aura\\Composer\\DefaultInstaller"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Aura\\Composer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Paul M. Jones",
+                "email": "pmjones88@gmail.com",
+                "homepage": "http://paul-m-jones.com"
+            }
+        ],
+        "description": "Installs Aura packages using the Composer defaults.",
+        "keywords": [
+            "aura",
+            "installer"
+        ]
+    },
+    {
         "name": "slim/slim",
         "version": "2.5.0",
         "version_normalized": "2.5.0.0",
@@ -115,5 +158,131 @@
             "sqlserver",
             "update"
         ]
+    },
+    {
+        "name": "aura/intl",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/auraphp/Aura.Intl.git",
+            "reference": "c5fe620167550ad6fa77dd3570fba2efc77a2a21"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/auraphp/Aura.Intl/zipball/c5fe620167550ad6fa77dd3570fba2efc77a2a21",
+            "reference": "c5fe620167550ad6fa77dd3570fba2efc77a2a21",
+            "shasum": ""
+        },
+        "require": {
+            "aura/installer-default": "1.0.*",
+            "php": ">=5.4.0"
+        },
+        "time": "2014-08-24 17:18:54",
+        "type": "aura-package",
+        "extra": {
+            "aura": {
+                "type": "library",
+                "config": {
+                    "common": "Aura\\Intl\\_Config\\Common"
+                }
+            },
+            "branch-alias": {
+                "dev-develop": "1.1.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Aura\\Intl": "src/"
+            },
+            "psr-4": {
+                "Aura\\Intl\\_Config\\": "config/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-2-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Paul M. Jones",
+                "email": "pmjones88@gmail.com",
+                "homepage": "http://paul-m-jones.com"
+            },
+            {
+                "name": "Aura.Intl Contributors",
+                "homepage": "https://github.com/auraphp/Aura.Intl/contributors"
+            },
+            {
+                "name": "Pascal Borreli",
+                "email": "pascal@borreli.com"
+            },
+            {
+                "name": "Mapthegod",
+                "email": "mapthegod@gmail.com"
+            },
+            {
+                "name": "José Lorenzo Rodríguez",
+                "email": "jose.zap@gmail.com"
+            }
+        ],
+        "description": "The Aura.Intl package provides internationalization (I18N) tools, specifically\npackage-oriented per-locale message translation.",
+        "homepage": "http://auraphp.com/Aura.Intl",
+        "keywords": [
+            "g11n",
+            "globalization",
+            "i18n",
+            "internationalization",
+            "intl",
+            "l10n",
+            "localization"
+        ]
+    },
+    {
+        "name": "danielfpedro/mayhem",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/danielfpedro/mayhem.git",
+            "reference": "4f60c4ef550a94050a76aa93d2513ffea1fd1d72"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/danielfpedro/mayhem/zipball/4f60c4ef550a94050a76aa93d2513ffea1fd1d72",
+            "reference": "4f60c4ef550a94050a76aa93d2513ffea1fd1d72",
+            "shasum": ""
+        },
+        "require": {
+            "aura/intl": "*",
+            "aura/sqlquery": "~2.1",
+            "slim/slim": "~2.5"
+        },
+        "time": "2014-12-27 04:18:32",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Mayhem\\": "src"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Daniel Pedro",
+                "email": "danielfpedro@gmail.com"
+            }
+        ],
+        "description": "Micro-framework",
+        "keywords": [
+            "framework"
+        ],
+        "support": {
+            "source": "https://github.com/danielfpedro/mayhem/tree/master",
+            "issues": "https://github.com/danielfpedro/mayhem/issues"
+        }
     }
 ]

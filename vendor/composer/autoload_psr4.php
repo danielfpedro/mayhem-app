@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Mayhem\\' => array($vendorDir . '/danielfpedro/mayhem/src'),
     'Aura\\SqlQuery\\' => array($vendorDir . '/aura/sqlquery/src'),
+    'Aura\\Intl\\_Config\\' => array($vendorDir . '/aura/intl/config'),
     'App\\' => array($baseDir . '/src'),
 );

@@ -1,6 +1,10 @@
 <?php
+define('DS', DIRECTORY_SEPARATOR);
 
-require "app.php";
-require "paths.php";
+require __DIR__ . DS . 'paths.php';
+
+require VENDOR . 'autoload.php';
+
+require CONFIG . 'app.php';
 
 ?>
