@@ -1,9 +1,8 @@
 <?php
 
-/**
-* 
-*/
-class ArticlesController
+namespace App\Controller;
+
+class ArticlesController extends AppController
 {
 	public function add($id = null){
 		return "Estou em " . __FUNCTION__;

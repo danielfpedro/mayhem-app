@@ -23,18 +23,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 define('DS', DIRECTORY_SEPARATOR);
 require __DIR__ . DS . 'vendor' . DS . 'autoload.php';
 
-$app = new \Slim\Slim();
+$app = new Slim\Slim();
 
 $app->map('/:controller(/:action)(/:params+)', function($controller, $action = null, $params = []) use ($app){
 	require __DIR__ . DS . 'config' . DS . 'bootstrap.php';
 
-	$app->config(['debug'=> $condig['debug']]);
+	$app->config(['debug'=> $config['debug']]);
 	
-	$file_controller = __DIR__ . DS . "src" . DS . "controller" . DS . ucfirst($controller) . 'Controller.php';
-
-	if (file_exists($file_controller)) {
-		$class_name = ucfirst($controller) . 'Controller';
-		require $file_controller;
+	// $file_controller = __DIR__ . DS . "src" . DS . "controller" . DS . ucfirst($controller) . 'Controller.php';
+	$class_name = 'App\Controller\\' . ucfirst($controller) . 'Controller';
+	if (class_exists($class_name)) {
 		$obj = new $class_name;
 
 		if (!$action) {
