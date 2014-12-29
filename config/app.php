@@ -5,6 +5,6 @@
  * @var array
  */
 $config	= [
-	'debug'=> true,
-	'responseType'=> 'JSON'
+	'debug' => true,
+	'responseType' => 'JSON'
 ];

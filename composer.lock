@@ -198,12 +198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/danielfpedro/mayhem.git",
-                "reference": "4f60c4ef550a94050a76aa93d2513ffea1fd1d72"
+                "reference": "a8ae5693eda8cdda8c36bbcc0320e7ff452db851"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danielfpedro/mayhem/zipball/4f60c4ef550a94050a76aa93d2513ffea1fd1d72",
-                "reference": "4f60c4ef550a94050a76aa93d2513ffea1fd1d72",
+                "url": "https://api.github.com/repos/danielfpedro/mayhem/zipball/a8ae5693eda8cdda8c36bbcc0320e7ff452db851",
+                "reference": "a8ae5693eda8cdda8c36bbcc0320e7ff452db851",
                 "shasum": ""
             },
             "require": {
@@ -234,7 +234,7 @@
                 "source": "https://github.com/danielfpedro/mayhem/tree/master",
                 "issues": "https://github.com/danielfpedro/mayhem/issues"
             },
-            "time": "2014-12-27 04:18:32"
+            "time": "2014-12-27 19:29:05"
         },
         {
             "name": "slim/slim",
