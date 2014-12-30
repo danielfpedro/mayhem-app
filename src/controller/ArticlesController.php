@@ -4,9 +4,6 @@ namespace App\Controller;
 
 use App\Model\Article;
 
-use Aura\SqlQuery\QueryFactory;
-use PDO;
-
 /**
  * Controller for test, dont't care about.
  */
@@ -34,13 +31,19 @@ class ArticlesController extends AppController
 
 	public function index()
 	{
+		$this->Article
+			->select
+				->cols(['title', 'text']);
 
-		$query = $this->Article->newQuery();
-		$query->cols(['title', 'text']);
+		print_r($this->Article->select->__toString());
 
-		$articles = $this->Article->findOne($query);
+		$this->Article->newQuery();
+		
+		$this->Article
+			->select
+				->cols(['title']);
 
-		print_r($articles);
+		print_r($this->Article->select->__toString());
 
 		return [];
 	}
