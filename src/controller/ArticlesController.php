@@ -31,21 +31,18 @@ class ArticlesController extends AppController
 
 	public function index()
 	{
-		$this->Article
-			->select
-				->cols(['title', 'text']);
+		// $select = $this->Article
+		// 	->select
+		// 	->cols(['title', 'text'])
+		// 	->where('title = :q')
+		// 	->bindValues(['q'=> 'título do post']);
 
-		print_r($this->Article->select->__toString());
+		$data = ['id' => 41, 'title' => 'loren ipdddddadasdsaum', 'text' => 'loren text'];
 
-		$this->Article->newQuery();
-		
-		$this->Article
-			->select
-				->cols(['title']);
+		$update = $this->Article->update($data);
+		echo $update->rowCount();
 
-		print_r($this->Article->select->__toString());
-
-		return [];
+		// return true;
 	}
 }
 
