@@ -7,4 +7,11 @@ class Article extends AppModel
 
 	public $tableName = 'articles';
 
+	public $validations = [
+		'title' => [
+			['lengthMax', 1],
+			['numeric']
+		]
+	];
+
 }

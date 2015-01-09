@@ -7,7 +7,7 @@ require dirname(__DIR__) . '/config/bootstrap.php';
 use Mayhem\Routing\Dispatcher;
 use Mayhem\Http\Cors;
 
-Cors::setCors();
+Cors::getCors();
 Dispatcher::dispatch($config);
 
 ?>

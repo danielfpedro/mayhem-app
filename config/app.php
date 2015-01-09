@@ -6,5 +6,6 @@
  */
 $config	= [
 	'debug' => true,
-	'responseType' => 'JSON'
+	'responseType' => 'JSON',
+	'defaultLanguage' => 'pt_br',
 ];

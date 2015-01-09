@@ -7,5 +7,5 @@ $datasource = [
 		'user'=> 'root',
 		'password'=> '',
 		'charset'=> 'utf8'
-	]
+	],
 ];
