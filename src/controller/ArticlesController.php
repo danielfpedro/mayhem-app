@@ -16,15 +16,21 @@ class ArticlesController extends AppController
 		$this->Article = new Article;
 	}
 
-	public function index()
+	public function view($id = null, $a = null)
 	{
+		echo $id;
+		return false;
+	}
 
-		$data = ['title' => 'title aqui', 'idade' => 5, 'password' => '123', 'confirm_password' => '10'];
+	public function add()
+	{
+		//$data = ['title' => 'title aqui', 'idade' => 5, 'password' => '123', 'confirm_password' => '10'];
+		$data = ['title' => 'dasdsa', 'text' => 'dsdsds'];
 
-		if ($this->Article->save($data)) {
-			$this->response(201, ['status' => 'ok', 'message' => 'Dados salvos com sucesso.']);
+		if ($this->Article->save($data, ['validate' => false])) {
+			$this->response(201, 'ok', 'Dados salvos com sucesso.');
 		} else {
-			$this->response(400, ['status' => 'Erro na validação dos dados', 'message' => $this->Article->validationErrors]);
+			$this->response(400, 'error', $this->Article->validationErrors);
 		}
 	}
 }
