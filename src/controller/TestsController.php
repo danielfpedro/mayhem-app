@@ -12,10 +12,14 @@ use Exception;
 class TestsController extends AppController
 {
 
-	function __construct()
+	public function beforeFilter()
 	{
-		parent::__construct();
 		$this->Test = new Test();
+	}
+
+	public function teste()
+	{
+		$this->Response->success('oi');
 	}
 
 	public function saveOk()
