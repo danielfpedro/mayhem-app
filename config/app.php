@@ -7,5 +7,5 @@
 $config	= [
 	'debug' => true,
 	'responseType' => 'JSON',
-	'defaultLanguage' => 'pt_br',
+	'defaultTimezone' => 'America/Sao_Paulo',
 ];

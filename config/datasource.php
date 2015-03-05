@@ -1,9 +1,10 @@
 <?php
+
 $datasource = [
 	'default'=> [
 		'type'=> 'mysql',
 		'host'=> 'localhost',
-		'dbname'=> 'blog',
+		'dbname'=> 'boate_app',
 		'user'=> 'root',
 		'password'=> '',
 		'charset'=> 'utf8'
