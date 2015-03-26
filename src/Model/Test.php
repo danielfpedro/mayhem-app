@@ -5,6 +5,7 @@ namespace App\Model;
 class Test extends AppModel
 {
 	public $tableName = 'test_fake_table';
+	public $tableAliasName = 'Fake';
 
 	public $data = [
 		'name' => 'Daniel de Faria Pedro',

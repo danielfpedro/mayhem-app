@@ -10,8 +10,4 @@ use Mayhem\Controller\Controller;
 class AppController extends Controller
 {
 
-	public function beforeFilter()
-	{
-	}
-
 }
